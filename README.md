@@ -31,3 +31,6 @@ npm install
 npm start
 ```
 Open http://localhost:4200/ in your browser
+
+**Note:** : Feel free to use **yarn** instead of **npm**
+ 
