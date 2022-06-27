@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 require('./products');
-const dbURI = 'mongodb+srv://yash:Yash12345@cluster0.uwpqj.mongodb.net/AssignmentDB?retryWrites=true&w=majority'; 
+const dbURI = 'mongodb+srv://[uname]:[password]@cluster0.uwpqj.mongodb.net/AssignmentDB?retryWrites=true&w=majority'; 
 mongoose.connect(dbURI, { dbName: 'cartApp' }); 
 mongoose.connection.on('connected', () => { 
  console.log(`Mongoose connected to ${dbURI}`);
