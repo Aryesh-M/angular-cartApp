@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+    .containerBox
+        form(action='' method= 'Post')
+            br
+            label(for="name" class="required") Product Name: 
+            br
+            input#name(type='text' value=(undefined===mProducts ? '' : mProducts.title) name='title' required)
+            br
+            label(for="price") Price:
+            br
+            input#type(type='text' name='price' value=(undefined===mProducts ? '' : mProducts.price))
+            br
+            
+            button.btn.create_btn Create Products

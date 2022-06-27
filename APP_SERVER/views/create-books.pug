@@ -1,0 +1,27 @@
+extends layout 
+
+block content 
+    .containerBox
+        form(action='' method= 'Post')
+            br
+            label(for="name" class="required") Product Name: 
+            br
+            input#name(type='text' name='title' required)
+            br
+            br
+            label(for="category")  Rating:
+            br
+            input#type(type='text' name='rating' placeholder="Out of 5")
+            br
+            br
+            label(for="ratings") Publish Date:
+            br
+            input#type(type='text' name='publishDate' placeholder="dd/mm/yyyy")
+            br
+            br
+            label(for="releasedyear") Price:
+            br
+            input#type(type='text' name='price')
+            br
+            
+            button.btn.create_btn Create Products

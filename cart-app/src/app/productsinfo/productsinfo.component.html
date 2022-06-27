@@ -1,0 +1,20 @@
+<div><br><br><br><br><br><br>
+    <h1 class="page-title">Product info</h1><br><br>
+<div class="customized-form"></div>
+    <div class="customized-form">
+        <div >
+            <p><b>Name:&nbsp;&nbsp;</b>
+                <span>{{ productDetails.title }}</span>
+            </p>
+            <p><b>Description:&nbsp;&nbsp;</b>
+                <span>{{ productDetails.description }}</span>
+            </p>
+            <p><b>Price:&nbsp;&nbsp;</b>
+                <span>{{ productDetails.price }}</span>
+            </p>
+        </div>
+    </div>
+    <a routerLink="/delete/{{ productDetails._id }}" class="marginc-15"> <button class="btn btn-info">Delete</button></a>&nbsp;&nbsp;
+    <a routerLink="/update/{{ productDetails._id }}"> <button class="btn btn-info ">Edit</button></a>
+    <!-- <a [routerLink]=""> <button class="btn btn-info marginc-10" (click)="addtoCart()">Add to cart</button></a> -->
+</div><br>

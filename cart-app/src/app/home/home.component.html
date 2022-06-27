@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartApp</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body id="wrapper">
+
+    <main>
+
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>CartApp</h3>
+                <p>Shopping according to your imagination</p>
+                <a href="#" class="btn">Find more</a>
+            </div>
+            <div class="controls">
+
+                <video src="../../assets/videos/1.mp4" class="vid-btn active"></video>
+                <video src="../../assets/videos/2.mp4" class="vid-btn"></video>
+            </div>
+
+            <div class="video-container">
+                <video src="../../assets/videos/1.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+
+        </section>
+
+
+
+        <div class="outer-box">
+            <h2>Women Styling</h2>
+            <ul>
+                <div class="img-box" *ngFor="let women of womenItems" >
+                    <li>
+                        <img [src] = "women.src" [alt]="women.alt" />
+                        <div class="description-box"> {{women.desc}} <br> Price : {{women.price}}<br>
+                            <a routerLink="/products" class="btn">Explore</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="outer-box">
+            <h2>Men Styling</h2>
+            <ul>
+                <div class="img-box" *ngFor="let men of menItems" >
+                    <li> <img [src] = "men.src" [alt]="men.alt" />
+                        <div class="description-box"> {{men.desc}} <br> Price : {{men.price}}<br>
+                            <a routerLink="/products" class="btn">Explore</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script>
+        let searchBtn = document.querySelector('#search-btn');
+        let searchBar = document.querySelector('.search-bar-container');
+        let formBtn = document.querySelector('#login-btn');
+        let loginForm = document.querySelector('.login-form-container');
+        let formClose = document.querySelector('#form-close');
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+        let videoBtn = document.querySelectorAll('.vid-btn');
+
+        window.onscroll = () => {
+            searchBtn.classList.remove('fa-times');
+            searchBar.classList.remove('active');
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+            loginForm.classList.remove('active');
+        }
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        });
+
+        searchBtn.addEventListener('click', () => {
+            searchBtn.classList.toggle('fa-times');
+            searchBar.classList.toggle('active');
+        });
+
+        formBtn.addEventListener('click', () => {
+            loginForm.classList.add('active');
+        });
+
+        formClose.addEventListener('click', () => {
+            loginForm.classList.remove('active');
+        });
+
+        videoBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.controls .active').classList.remove('active');
+                btn.classList.add('active');
+                let src = btn.getAttribute('data-src');
+                document.querySelector('#video-slider').src = src;
+            });
+        });
+
+        var swiper = new Swiper(".review-slider", {
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

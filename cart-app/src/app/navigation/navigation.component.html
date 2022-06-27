@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartApp</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body id="wrapper">
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>C</span>art</a>
+
+        <nav class="navbar">
+            <a class="header-links" routerLink="/about">About</a>
+            <a class="header-links" routerLink="/products">Products</a>
+            <a class="header-links" routerLink="/create">Add product</a>
+            <a *ngIf="isUserLoggedIn" class="header-links" routerLink="/cart">Cart</a>
+            <a *ngIf="!isUserLoggedIn" class="header-links" routerLink="/login">Login</a>
+            <a *ngIf="isUserLoggedIn" class="header-links" routerLink="/login" (click)="logOut()">Signout</a>
+        </nav>
+
+
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+</body>
+
+</html>

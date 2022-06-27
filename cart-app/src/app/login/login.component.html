@@ -1,0 +1,19 @@
+<!-- coded by Romi shah  -->
+<br><br><br>
+ <div class="form">
+   <form  action="" method="Post" role="form" (ngSubmit)="login(loginData)">
+     <h2><span>L</span>ogin</h2>
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" [(ngModel)]="loginData.email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="password" id="password" [(ngModel)]="loginData.password" required="required">
+                    <span>Password</span>
+                <div class="inputbox">
+                    <input type="submit" name="" value="Login">
+                    <a routerLink="/register"> Create account</a>
+                </div>
+                </div>
+    </form>
+</div>

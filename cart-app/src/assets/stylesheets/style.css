@@ -1,0 +1,202 @@
+/* Yash Marakna --starts */
+
+body {
+    /*  padding: 50px; */
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: #d2e0e9;
+}
+
+#heading {
+    height: 326px;
+    ;
+    width: 100%;
+    margin: auto;
+}
+
+#heading h2 {
+    font-size: 1.5em!important;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: darkorange;
+}
+
+.create_btn {
+    margin: 1em;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+#heading h2 {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card {
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 39%;
+    margin-left: 50px;
+    height: 100px;
+    margin-top: 0.5em;
+    margin-left: 30%;
+    padding: 0.5em;
+    background-color: antiquewhite;
+}
+
+i {
+    color: black;
+}
+
+.card p {
+    /*text-align: center;*/
+    margin: 0 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title-image {
+    /* Photo by pexels-pixabays */
+    background: url(../images/pexels-pixabay.jpg);
+    min-height: 50%;
+    min-width: 1024px;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.title-text {
+    top: 103px;
+    left: 50%;
+    position: absolute;
+    font-size: 3em;
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+
+/* .about-text {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  font-weight: bold;
+} */
+
+.landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+}
+
+.explore-btn {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#products-image {
+    /* Photo by pexels-pixabays */
+    background: url(../images/pexels-pixabay.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+.product-boundry {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 0.5em;
+    padding: 2em;
+    color: black!important;
+    box-shadow: 5px 5px 5px black;
+    /* Photo by Thought Catalog from Pexels.jpg */
+    background: url('../images/Photo\ by\ Thought\ Catalog\ from\ Pexels.jpg');
+}
+
+.no-underline {
+    text-decoration: none!important;
+}
+
+p span {
+    color: orange;
+}
+
+.input-form label {
+    padding-top: 1em;
+    display: inline;
+}
+
+.input-form input {
+    border-radius: 10px;
+    left: 15%;
+    height: 2em;
+    margin-top: 1em;
+    width: 32em !important;
+}
+
+.input-form button {
+    width: 12em;
+    margin-left: 40%;
+}
+
+.create-btn {
+    left: 50%;
+    width: 12em;
+    top: 50%;
+    margin: auto;
+}
+
+
+/* Yash Marakna --ends */
+
+
+/* Romi Shah --starts */
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #3b3d42;
+    color: white;
+    border-radius: 3em;
+    margin: 10em 2em 3em 1em;
+}
+
+.containerc {
+    padding: 16px;
+    background-color: #fcfcfc;
+}
+
+
+/* Romi Shah --ends */
+
+
+/* @media (min-width: 1200px){
+  .container {
+      max-width: 100%;
+  }
+} */

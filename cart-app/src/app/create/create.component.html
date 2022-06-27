@@ -1,0 +1,16 @@
+<div><br><br><br><br><br><br>
+  <h1 class="page-title">Create Products</h1><br><br>
+  <form action="" method="Post" role="form" (ngSubmit)="createnewProduct(createProducts)"  class="input-form customized-form">
+
+      <label for="name">Title: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="title" type="text" [(ngModel)]="createProducts.title" name="title"><br>
+
+      <label for="description">Description:</label>&nbsp;&nbsp;
+      <input id="description" type="text" [(ngModel)]="createProducts.description" name="description"><br>
+
+      <label for="price">Price:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="price" type="text" [(ngModel)]="createProducts.price" name="price"><br><br><br>
+
+      <button class="btn btn-success marginc-15">Add</button><br><br><br>
+  </form>
+</div>

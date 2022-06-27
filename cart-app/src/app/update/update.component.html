@@ -1,0 +1,16 @@
+<div><br><br><br><br><br><br>
+  <h1 class="page-title">Update Products</h1><br><br>
+  <form action="" method="Post" role="form" (ngSubmit)="updateProducts(update_products)" class="input-form customized-form">
+
+      <label for="name">Title: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="title" type="text" [(ngModel)]="update_products.title" name="title"><br>
+
+      <label for="description">Description:</label>&nbsp;&nbsp;
+      <input id="description" type="text" [(ngModel)]="update_products.description" name="description"><br>
+
+      <label for="price">Price:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="price" type="text" [(ngModel)]="update_products.price" name="price"><br>
+
+      <button class="btn btn-success marginc-15">Update</button>
+  </form>
+</div>
