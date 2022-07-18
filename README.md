@@ -1,7 +1,6 @@
 # MEAN CartApp
 
 Online store with CRUD operations using MEAN stack.
-GEC- Bhavnagar | 2015- 2019
 The inventory of a clothing store
 AngularJS functions (data binding, filtering, directives)
 
